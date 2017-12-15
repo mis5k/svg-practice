@@ -1,0 +1,26 @@
+<html lang="ko">
+    <head>
+        <link rel="stylesheet" href="snowman.css">
+    </head>
+    <body>
+        <div id="shapes" class="flex">
+            <svg>
+                <defs>
+                    <radialGradient id="gradient">
+                        <stop offset="10%" stop-color="white" />
+                        <stop offset="95%" stop-color="rgb(204,204,204)" />
+                    </radialGradient>
+                    <linearGradient id="grad2" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <circle cx="70" cy="70" r="50" fill="url(#gradient)"></circle> 
+                <circle cx="70" cy="165" r="60" fill="url(#gradient)"></circle>
+                <circle cx="50" cy="50" r="7" fill="black"></circle>
+                <circle cx="90" cy="50" r="7" fill="black"></circle>
+                <polygon points="67,60 67,80 130,70" style="fill:url(#grad2);" />
+                <circle cx="70" cy="80" r="15" stroke-width="4" stroke="black" fill="none" stroke-dashoffset="104" stroke-dasharray="50"/>
+            </svg>
+        </div>
+    </body>
